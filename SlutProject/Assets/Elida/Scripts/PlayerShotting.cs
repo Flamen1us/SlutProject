@@ -13,6 +13,12 @@ public class PlayerShotting : MonoBehaviour
         
     }
 
+    void OnShoot()
+    {
+        GameObject bullet = Instantiate(Bullet, transform.position, transform.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(transform.up * Bulletspeed, ForceMode2D.Impulse);
+    }
    
     void Update()
     {
