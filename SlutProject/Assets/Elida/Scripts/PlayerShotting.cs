@@ -10,12 +10,13 @@ public class PlayerShotting : MonoBehaviour
     [SerializeField] GameObject Bullet;
     void Start()
     {
-        
+       
     }
 
     void OnShoot()
     {
         GameObject bullet = Instantiate(Bullet, transform.position, transform.rotation);
+        Debug.Log("Shoot");
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(transform.up * Bulletspeed, ForceMode2D.Impulse);
     }
