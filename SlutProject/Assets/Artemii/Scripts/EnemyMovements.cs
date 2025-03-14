@@ -5,15 +5,22 @@ using UnityEngine;
 public class EnemyMovements : MonoBehaviour
 {
     [SerializeField] float enemySpeed = 5;
-    // Start is called before the first frame update
+    [SerializeField] float enemyHealth = 100;
+    Rigidbody2D rb;
+    GameObject player;
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(player != null)
+        {
+            Debug.Log(enemyHealth);
+            Vector2 direction = (player.transform.position - transform.position).normalized;
+            rb.MovePosition(rb.position + direction * enemySpeed * Time.fixedDeltaTime);    
+        }
     }
 }

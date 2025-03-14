@@ -9,6 +9,10 @@ public class PlayerMovements : MonoBehaviour
     Vector2 moveInput;
     // Start is called before the first frame update
 
+    public void OnRotate()
+    {
+        transform.Rotate(0,0,45);
+    }
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
