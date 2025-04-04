@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b01b600e1addb42ae3d22c00880720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coin: {fileID: 1126248362287553891, guid: 6e2998bd855c9df4a88af8436a322858, type: 3}
 --- !u!70 &7831844670153103034
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
