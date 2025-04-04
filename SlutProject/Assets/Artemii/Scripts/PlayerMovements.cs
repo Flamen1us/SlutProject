@@ -5,13 +5,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovements : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 10;
+    Rigidbody2D rb;
     Vector2 moveInput;
-    // Start is called before the first frame update
+    Vector2 screenBoundery;
+    [SerializeField] float moveSpeed = 10;
+    [SerializeField] float rotationSpeed = 4000;
 
-    public void OnRotate()
+    private void Start()
     {
-        transform.Rotate(0,0,45);
+        rb = GetComponent<Rigidbody2D>();
     }
     public void OnMove(InputValue value)
     {
@@ -20,6 +22,20 @@ public class PlayerMovements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(moveInput*moveSpeed*Time.deltaTime);
+        rb.velocity = moveInput * moveSpeed;
+        if (moveInput != Vector2.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(transform.forward, moveInput);
+            Quaternion rotate = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+            rb.MoveRotation(rotate);
+        }
+        else
+        {
+            rb.angularVelocity = 0;
+        }
+
+        screenBoundery = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, -screenBoundery.x, screenBoundery.x), Mathf.Clamp(transform.position.y, -screenBoundery.y, screenBoundery.y));
     }
 }
