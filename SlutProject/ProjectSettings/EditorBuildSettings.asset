@@ -8,5 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Elida/nogot.unity
+    guid: 5fd538c9b2bbea3479b6dfbf1462b095
+  - enabled: 1
+    path: Assets/Elida/Storescene.unity
+    guid: 70522995057aace4e98bf498f60146e2
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ad2dca2a5aa90fa4c9c6d2da4fc6a6ec, type: 2}
