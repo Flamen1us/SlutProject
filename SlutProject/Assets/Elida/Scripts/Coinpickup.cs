@@ -11,8 +11,6 @@ public class Coinpickup : MonoBehaviour
         if (collider.tag.Contains("Player"))
         {
             Destroy(gameObject);
-            PlayerController.Instance.AddScore(Coinvalue);
-           
         }
         
     }
