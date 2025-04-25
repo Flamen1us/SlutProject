@@ -1,0 +1,43 @@
+#HealthBar .unity-progress-bar__progress {
+    background-color: rgb(255, 0, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#HealthBar .unity-progress-bar__container {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#HealthBar .unity-progress-bar__background {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+}
+
+.coin {
+    width: 64px;
+    height: 64px;
+    background-image: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=8228938214290033325&guid=d97e2b256f15873469aa4d719eb0c13e&type=3#console.erroricon");
+    -unity-background-image-tint-color: rgb(255, 254, 0);
+}
+
+#LevelBar .unity-progress-bar__background {
+    background-color: rgb(0, 0, 0);
+}
+
+#LevelBar .unity-progress-bar__container {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#LevelBar .unity-progress-bar__progress {
+    background-color: rgb(103, 255, 0);
+}

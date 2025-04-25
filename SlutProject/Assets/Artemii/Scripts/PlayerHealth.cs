@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int playerHealth = 100;
+    [SerializeField] public int playerHealth = 100;
     
     void OnCollisionEnter2D(Collision2D collision)
     {

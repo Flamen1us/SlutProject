@@ -38,7 +38,7 @@ public class ShootingEnemy : MonoBehaviour
     {
         if (haveShooted && player != null)
         {
-            Vector2 direction = ((-player.transform.position) - transform.position).normalized;
+            Vector2 direction = (transform.position - player.transform.position).normalized;
             Debug.Log(direction);
             rb.MovePosition(rb.position + direction*enemySpeed*Time.deltaTime);
             Debug.Log("Walking");

@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Coinpickup : MonoBehaviour
 {
-    public int Coinvalue = 1;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag.Contains("Player"))
         {
+            HuD hud = FindObjectOfType<HuD>();
+            if (hud != null)
+            {
+                hud.AddCoin();
+            }
             Destroy(gameObject);
-            PlayerController.Instance.AddScore(Coinvalue);
-           
         }
-        
     }
 }

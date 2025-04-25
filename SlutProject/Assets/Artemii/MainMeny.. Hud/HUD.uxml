@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Artemii/MainMeny..%20Hud/HudStyle.uss?fileID=7433441132597879392&amp;guid=555c292228332cf4ca071cc569f97cba&amp;type=3#HudStyle" />
+    <ui:VisualElement name="Main" style="flex-grow: 1;">
+        <ui:VisualElement name="Top" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="TopLeft" style="flex-grow: 1;">
+                <ui:ProgressBar value="100" name="HealthBar" style="width: 400px; height: 50px;" />
+                <ui:ProgressBar value="22" title="my-progress" name="LevelBar" style="width: 400px; height: 40px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TopRight" style="flex-grow: 1; align-items: flex-end; flex-direction: row-reverse;">
+                <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Coins" style="align-self: flex-start; font-size: 40px;" />
+                <ui:VisualElement name="ImageOfCoin" class="coin" style="align-self: flex-start; -unity-background-image-tint-color: rgb(255, 255, 255); background-image: url(&quot;project://database/Assets/Artemii/MainMeny..%20Hud/qgZ_Mx.png?fileID=2800000&amp;guid=943e309911219fd4fa02f11c3b7f808b&amp;type=3#qgZ_Mx&quot;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Down" style="flex-grow: 1;">
+            <ui:VisualElement name="DownLeft" style="flex-grow: 1;" />
+            <ui:VisualElement name="DownRight" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

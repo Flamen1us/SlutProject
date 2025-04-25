@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Artemii/MainMeny..%20Hud/MainStyle.uss?fileID=7433441132597879392&amp;guid=7f0cdc97cc4e4f143908e5eda6aa4b81&amp;type=3#MainStyle" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; align-items: center; justify-content: center; align-self: center;">
+        <ui:Label tabindex="-1" text="Brotato 2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 50px;" />
+        <ui:Button text="Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Start" class="menyButtons" />
+        <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Settings" class="menyButtons" />
+        <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Exit" class="menyButtons" />
+    </ui:VisualElement>
+</ui:UXML>
