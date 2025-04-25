@@ -49,10 +49,10 @@ MonoBehaviour:
   minSpawnTime: 3
   maxSpawnTime: 6
   spawnDistance: 0.1
-  spawnLeftBorderX: -29.43
-  spawnRightBorderX: 28.74
-  spawnUpBorder: 11.55
-  spawnDownBorder: -14.16
+  spawnLeftBorderX: -21
+  spawnRightBorderX: 40
+  spawnUpBorder: 9
+  spawnDownBorder: -9
 --- !u!114 &4397324487723762775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,5 +65,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de360a948f320e45aa65d3f3b6615d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Levelend: 10
+  Levelend: 1000
   startTime: 0
