@@ -6,11 +6,22 @@ using UnityEngine.InputSystem;
 
 public class PlayerShotting : MonoBehaviour
 {
-    [SerializeField] float Bulletspeed = 3f;
+    [SerializeField] public float Bulletspeed = 3f;
     [SerializeField] GameObject Bullet;
-    void Start()
+    void Update()
     {
-       
+        Mouseaime();
+    }
+
+    public void Mouseaime()
+    {
+        //Get mouse posision for aim, player look at mouse then pew pew 
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        mousePos.z = 0f;
+        //Get the direction :)
+        Vector3 direction = mousePos - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
     }
 
     void OnShoot()
@@ -21,8 +32,5 @@ public class PlayerShotting : MonoBehaviour
         rb.AddForce(transform.up * Bulletspeed, ForceMode2D.Impulse); 
     }
    
-    void Update()
-    {
-        
-    }
+   
 }

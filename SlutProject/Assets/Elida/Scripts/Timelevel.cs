@@ -26,5 +26,8 @@ public class Timelevel : MonoBehaviour
     public void EndLevel()
     {
         SceneManager.LoadScene("Storescene");
+        FindFirstObjectByType<Scenepersist>().ResetScenepersist();
+        int Currentsceneindex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(Currentsceneindex * 1);
     }
 }
