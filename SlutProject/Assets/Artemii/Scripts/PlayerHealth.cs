@@ -5,7 +5,14 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] public int playerHealth = 100;
-    
+
+    private void Update()
+    {
+        if (playerHealth <= 100)
+        {
+            
+        }
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
