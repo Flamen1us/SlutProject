@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8357958493730039629}
   - component: {fileID: 151422652790340619}
   - component: {fileID: 3355664384168442602}
+  - component: {fileID: 822654144290332539}
   - component: {fileID: 4516727470181086158}
   m_Layer: 8
   m_Name: CowardEnemy
@@ -197,6 +198,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &822654144290332539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7946788912053280586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 139797033afb3ff47b598f716b606cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 4
+  coin: {fileID: 1126248362287553891, guid: 6e2998bd855c9df4a88af8436a322858, type: 3}
 --- !u!114 &4516727470181086158
 MonoBehaviour:
   m_ObjectHideFlags: 0
