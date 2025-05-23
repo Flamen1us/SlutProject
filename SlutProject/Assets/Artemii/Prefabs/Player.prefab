@@ -131,10 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f01c8423ce37b42ad865787132ced2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 10
+  playerHealth: 100
   damage: 10
   healling: 0
   movementSpeed: 10
+  coins: 0
 --- !u!61 &4440991808601354384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -235,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
+  enemyDamage: 0
 --- !u!114 &6187942551637282872
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float spawnRightBorder = 0;
     [SerializeField] float spawnUpBorder = 0;
     [SerializeField] float spawnDownBorder = 0;
-    [SerializeField] public int waveNumber = 1;
+    public int waveNumber = 1;
     [SerializeField] GameObject normalEnemy;
     [SerializeField] GameObject cowardEnemy;
     [SerializeField] GameObject fastEnemy;
@@ -23,6 +23,8 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        waveNumber = FindObjectOfType<Stats>().waveNumber;
+        Debug.Log(waveNumber);
         pla.enemyDamage = 5;
         enemyHP.enemyHealth = 3 + Mathf.Pow(1.1f, waveNumber);
         fastHP.enemyHealth = 1 + Mathf.Pow(1.2f, waveNumber);
