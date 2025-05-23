@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovements : MonoBehaviour
 {
     [SerializeField] float enemySpeed = 5;
-    [SerializeField] float enemyHealth = 100;
+    float enemyHealth; 
     Rigidbody2D rb;
     GameObject player;
     void Start()

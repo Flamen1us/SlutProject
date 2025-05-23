@@ -28,6 +28,7 @@ public class Timelevel : MonoBehaviour
     {
         Stats stat = FindAnyObjectByType<Stats>();
         stat.coins = FindObjectOfType<HuD>().coinCount;
+        stat.waveNumber++;
         SceneManager.LoadScene("Stor");
         inStore = true;
      

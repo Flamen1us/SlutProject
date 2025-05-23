@@ -15,6 +15,7 @@ public class HuD : MonoBehaviour
         root = GetComponent<UIDocument>().rootVisualElement;
         healthbar = root.Q<ProgressBar>("HealthBar");
         coins = root.Q<Label>("Coins");
+        coinCount = FindObjectOfType<Stats>().coins;
     }
 
     private void Update()
