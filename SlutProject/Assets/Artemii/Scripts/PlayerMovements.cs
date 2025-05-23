@@ -15,7 +15,6 @@ public class PlayerMovements : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Stats stat = FindObjectOfType<Stats>();
         moveSpeed = stat.movementSpeed;
-
     }
     public void OnMove(InputValue value)
     {

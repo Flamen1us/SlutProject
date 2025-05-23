@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] public int playerHealth = 100;
+    [SerializeField] public float playerHealth = 100;
+    [SerializeField] public float enemyDamage;
 
     private void Update()
     {
@@ -19,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (playerHealth > 0)
             {
-                playerHealth -= 10;
+                playerHealth -= enemyDamage;
                 Debug.Log(playerHealth);
             }
             else

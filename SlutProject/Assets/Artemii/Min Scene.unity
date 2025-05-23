@@ -1194,6 +1194,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: fastEnemy
+      value: 
+      objectReference: {fileID: 2508049525297642840, guid: 36c2454876960464ea222f37e37042f4, type: 3}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: BigOneEnemy
+      value: 
+      objectReference: {fileID: 3784134233339421085, guid: 66f3e3b481007b6458370f274bda4fd1, type: 3}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: cowardEnemy
+      value: 
+      objectReference: {fileID: 7946788912053280586, guid: c37d332b785aa394da66dd68493d55b6, type: 3}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: normalEnemy
+      value: 
+      objectReference: {fileID: 234121523416443726, guid: 2d7da15aacf82b445bbd2917591bcc56, type: 3}
     - target: {fileID: 4397324487723762775, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
       propertyPath: Levelend
       value: 40

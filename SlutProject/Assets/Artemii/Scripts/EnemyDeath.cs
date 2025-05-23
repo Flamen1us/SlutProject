@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyDeath : MonoBehaviour
 {
-    [SerializeField] float enemyHealth = 4;
+    [SerializeField]public float enemyHealth = 4;
     [SerializeField] GameObject coin;
     public void IsDead(Stats stat)
     {
