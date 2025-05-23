@@ -5,15 +5,20 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
-    [SerializeField] GameObject coin;
-  
+    Stats stat;
+    private void Start()
+    {
+        stat = FindObjectOfType<Stats>();
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
-            Instantiate(coin, collision.transform.position, collision.transform.rotation);
+            EnemyDeath enemy = collision.gameObject.GetComponent<EnemyDeath>();
+            if(enemy != null && stat != null)
+            {
+                enemy.IsDead(stat);
+            }
         }
         Destroy(gameObject);
     }
@@ -22,7 +27,4 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-
-  
 }

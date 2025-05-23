@@ -45,14 +45,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63bd4d821f802e4ca5993749a782174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 234121523416443726, guid: 2d7da15aacf82b445bbd2917591bcc56, type: 3}
-  minSpawnTime: 3
-  maxSpawnTime: 6
   spawnDistance: 0.1
-  spawnLeftBorderX: -21
-  spawnRightBorderX: 40
-  spawnUpBorder: 9
-  spawnDownBorder: -9
+  spawnLeftBorder: -10.5
+  spawnRightBorder: 14.5
+  spawnUpBorder: 10.5
+  spawnDownBorder: -14
+  waveNumber: 1
+  normalEnemy: {fileID: 234121523416443726, guid: 2d7da15aacf82b445bbd2917591bcc56, type: 3}
+  cowardEnemy: {fileID: 7946788912053280586, guid: c37d332b785aa394da66dd68493d55b6, type: 3}
+  fastEnemy: {fileID: 2508049525297642840, guid: 36c2454876960464ea222f37e37042f4, type: 3}
+  BigOneEnemy: {fileID: 3784134233339421085, guid: 66f3e3b481007b6458370f274bda4fd1, type: 3}
+  pla: {fileID: 0}
+  enemyHP: {fileID: 7928021423369157183, guid: 2d7da15aacf82b445bbd2917591bcc56, type: 3}
+  fastHP: {fileID: 6952908282719516041, guid: 36c2454876960464ea222f37e37042f4, type: 3}
+  cowardHP: {fileID: 822654144290332539, guid: c37d332b785aa394da66dd68493d55b6, type: 3}
+  BigOneHP: {fileID: 6506908400739085291, guid: 66f3e3b481007b6458370f274bda4fd1, type: 3}
 --- !u!114 &4397324487723762775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,5 +72,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de360a948f320e45aa65d3f3b6615d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Levelend: 1000
+  Levelend: 30
   startTime: 0

@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] public int playerHealth = 100;
-    
+    [SerializeField] public float playerHealth = 100;
+    [SerializeField] public float enemyDamage;
+
+    private void Update()
+    {
+        if (playerHealth <= 100)
+        {
+            
+        }
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
             if (playerHealth > 0)
             {
-                playerHealth -= 10;
+                playerHealth -= enemyDamage;
                 Debug.Log(playerHealth);
             }
             else

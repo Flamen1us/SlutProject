@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1791309400321869458}
   - component: {fileID: 2155305703622320512}
   - component: {fileID: 5115996213893976424}
+  - component: {fileID: 3279319434714400094}
   - component: {fileID: 4440991808601354384}
   - component: {fileID: 8756668466039463514}
   - component: {fileID: 513717815273748773}
@@ -118,6 +119,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3279319434714400094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879629481337646892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f01c8423ce37b42ad865787132ced2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 10
+  damage: 10
+  healling: 0
+  movementSpeed: 10
 --- !u!61 &4440991808601354384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -205,8 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5528268f1dadd244abb41cc9c2475ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  rotationSpeed: 4000
 --- !u!114 &4648248099428131840
 MonoBehaviour:
   m_ObjectHideFlags: 0
