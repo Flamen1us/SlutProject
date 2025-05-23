@@ -50,7 +50,7 @@ MonoBehaviour:
   spawnRightBorder: 14.5
   spawnUpBorder: 10.5
   spawnDownBorder: -14
-  waveNumber: 0
+  waveNumber: 1
   normalEnemy: {fileID: 234121523416443726, guid: 2d7da15aacf82b445bbd2917591bcc56, type: 3}
   cowardEnemy: {fileID: 7946788912053280586, guid: c37d332b785aa394da66dd68493d55b6, type: 3}
   fastEnemy: {fileID: 2508049525297642840, guid: 36c2454876960464ea222f37e37042f4, type: 3}
@@ -73,5 +73,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inStore: 0
-  Levelend: 30
+  Levelend: 50
   startTime: 0

@@ -39,7 +39,6 @@ public class Upgardes : MonoBehaviour
         if(stats.coins >= costSpeed)
         {
             stats.coins -= costSpeed;
-            Debug.Log("Bought");
             FindObjectOfType<PlayerShotting>().Bulletspeed += speedtoadd;
         }
         else
@@ -55,7 +54,6 @@ public class Upgardes : MonoBehaviour
         if(stats.coins >= costHealth)
         {
             stats.coins -= costHealth;
-            Debug.Log("Bought");
             FindObjectOfType<Stats>().playerHealth += Healthup;
         }
         else
@@ -71,7 +69,6 @@ public class Upgardes : MonoBehaviour
         if(stats.coins >= costDamage)
         {
             stats.coins -= costDamage;
-            Debug.Log("Bought");
             FindObjectOfType<Stats>().damage += Damageup;
         }
         else

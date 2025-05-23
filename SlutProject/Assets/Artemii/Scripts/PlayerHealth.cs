@@ -10,7 +10,6 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         playerHealth = FindFirstObjectByType<Stats>().playerHealth;
-        Debug.Log(playerHealth);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -19,7 +18,6 @@ public class PlayerHealth : MonoBehaviour
             if (playerHealth > 0)
             {
                 playerHealth -= enemyDamage;
-                Debug.Log(playerHealth);
             }
             else
             {

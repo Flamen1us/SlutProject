@@ -136,6 +136,7 @@ MonoBehaviour:
   healling: 0
   movementSpeed: 10
   coins: 0
+  waveNumber: 1
 --- !u!61 &4440991808601354384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
-  enemyDamage: 0
+  enemyDamage: 5
 --- !u!114 &6187942551637282872
 MonoBehaviour:
   m_ObjectHideFlags: 0

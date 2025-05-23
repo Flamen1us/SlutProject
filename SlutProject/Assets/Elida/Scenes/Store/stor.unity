@@ -174,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd36aaaebbdea245aa8eec5712bf2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ene: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
 --- !u!114 &106594228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +225,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1665,6 +1664,9 @@ MonoBehaviour:
   speedtoadd: 2
   Healthup: 5
   Damageup: 2
+  costSpeed: 10
+  costHealth: 20
+  costDamage: 30
 --- !u!1 &1107123447
 GameObject:
   m_ObjectHideFlags: 0
