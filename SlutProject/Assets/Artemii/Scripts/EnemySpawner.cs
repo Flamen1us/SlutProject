@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float spawnRightBorder = 0;
     [SerializeField] float spawnUpBorder = 0;
     [SerializeField] float spawnDownBorder = 0;
-    [SerializeField] int waveNumber = 1;
+    [SerializeField] public int waveNumber = 1;
     [SerializeField] GameObject normalEnemy;
     [SerializeField] GameObject cowardEnemy;
     [SerializeField] GameObject fastEnemy;

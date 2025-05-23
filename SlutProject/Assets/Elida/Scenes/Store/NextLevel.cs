@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-  public void MoveToScene(int sceneID)
+    [SerializeField] EnemySpawner ene;
+    public void MoveToScene(int sceneID)
     {
+        ene.waveNumber++;
         SceneManager.LoadScene(sceneID);
     }
    
