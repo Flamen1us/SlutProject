@@ -8,6 +8,8 @@ public class NextLevel : MonoBehaviour
     [SerializeField] EnemySpawner ene;
     public void MoveToScene(int sceneID)
     {
+        HuD hud = FindAnyObjectByType<HuD>();
+        hud.coinCount = FindObjectOfType<Stats>().coins;
         ene.waveNumber++;
         SceneManager.LoadScene(sceneID);
     }

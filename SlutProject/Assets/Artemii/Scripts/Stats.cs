@@ -9,9 +9,4 @@ public class Stats : MonoBehaviour
     [SerializeField] public float healling = 0; // never used
     [SerializeField] public float movementSpeed = 10; //never used
     public int coins;
-    [SerializeField] HuD hud;
-    private void Update()
-    {
-        coins = hud.coinCount;
-    }
 }

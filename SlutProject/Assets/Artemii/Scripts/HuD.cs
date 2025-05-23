@@ -10,7 +10,6 @@ public class HuD : MonoBehaviour
     ProgressBar healthbar;
     public int coinCount = 0;
     Label coins;
-    [SerializeField]Stats stat;
     private void Awake()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
@@ -21,7 +20,6 @@ public class HuD : MonoBehaviour
     private void Update()
     {
         healthbar.value = player.playerHealth;
-        coinCount = stat.coins;
     }
     public void AddCoin()
     {

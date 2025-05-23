@@ -26,7 +26,8 @@ public class Timelevel : MonoBehaviour
 
     public void EndLevel()
     {
-       
+        Stats stat = FindAnyObjectByType<Stats>();
+        stat.coins = FindObjectOfType<HuD>().coinCount;
         SceneManager.LoadScene("Stor");
         inStore = true;
      
