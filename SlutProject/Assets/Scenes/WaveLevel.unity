@@ -393,12 +393,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 184353970}
     - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: fastHP
+      value: 
+      objectReference: {fileID: 6952908282719516041, guid: 36c2454876960464ea222f37e37042f4, type: 3}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: enemyHP
+      value: 
+      objectReference: {fileID: 7928021423369157183, guid: 2d7da15aacf82b445bbd2917591bcc56, type: 3}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: BigOneHP
+      value: 
+      objectReference: {fileID: 6506908400739085291, guid: 66f3e3b481007b6458370f274bda4fd1, type: 3}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: cowardHP
+      value: 
+      objectReference: {fileID: 822654144290332539, guid: c37d332b785aa394da66dd68493d55b6, type: 3}
+    - target: {fileID: 3451018381356469139, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
       propertyPath: waveNumber
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4397324487723762775, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
       propertyPath: Levelend
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6703279943828576600, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
       propertyPath: m_Name
@@ -758,10 +774,6 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 1501793765}
-    - target: {fileID: 3279319434714400094, guid: f236520f86a8f7640bde584069347400, type: 3}
-      propertyPath: waveNumber
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4648248099428131840, guid: f236520f86a8f7640bde584069347400, type: 3}
       propertyPath: enemyDamage
       value: 5
