@@ -1033,6 +1033,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 994598166}
+        m_TargetAssemblyTypeName: Upgardes, Assembly-CSharp
+        m_MethodName: BuyHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &595570210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,6 +1297,18 @@ MonoBehaviour:
       - m_Target: {fileID: 994598164}
         m_TargetAssemblyTypeName: Shopmanager, Assembly-CSharp
         m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 994598166}
+        m_TargetAssemblyTypeName: Upgardes, Assembly-CSharp
+        m_MethodName: BuyEnemyDamage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1636,9 +1660,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrade1: {fileID: 948302590}
-  upgrade2: {fileID: 0}
-  upgrade3: {fileID: 0}
+  upgrade2: {fileID: 595570209}
+  upgrade3: {fileID: 925516854}
   speedtoadd: 2
+  Healthup: 5
+  Damageup: 2
 --- !u!1 &1107123447
 GameObject:
   m_ObjectHideFlags: 0
