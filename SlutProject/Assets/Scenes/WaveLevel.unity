@@ -414,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4397324487723762775, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
       propertyPath: Levelend
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6703279943828576600, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
       propertyPath: m_Name
@@ -430,17 +430,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4118251389047698513, guid: 89c05037238a16e41beaf1fd88967994, type: 3}
   m_PrefabInstance: {fileID: 2454816434373376622}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1302701274 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3279319434714400094, guid: f236520f86a8f7640bde584069347400, type: 3}
-  m_PrefabInstance: {fileID: 1523714728}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19f01c8423ce37b42ad865787132ced2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1382431312
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 184353970}
   coinCount: 0
-  stat: {fileID: 1302701274}
 --- !u!114 &1501793766
 MonoBehaviour:
   m_ObjectHideFlags: 0
