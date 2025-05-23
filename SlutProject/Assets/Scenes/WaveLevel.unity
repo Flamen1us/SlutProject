@@ -412,6 +412,10 @@ PrefabInstance:
       propertyPath: waveNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4397324487723762775, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
+      propertyPath: Levelend
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6703279943828576600, guid: e7a945aefd82c5445b9e2ce3c6c2dcd7, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -782,6 +786,14 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 1501793765}
+    - target: {fileID: 4648248099428131840, guid: f236520f86a8f7640bde584069347400, type: 3}
+      propertyPath: enemyDamage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187942551637282872, guid: f236520f86a8f7640bde584069347400, type: 3}
+      propertyPath: Bulletspeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
