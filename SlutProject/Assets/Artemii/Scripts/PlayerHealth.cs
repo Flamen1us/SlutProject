@@ -7,6 +7,10 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public float playerHealth = 100;
     [SerializeField] public float enemyDamage;
 
+    private void Start()
+    {
+        playerHealth = FindFirstObjectByType<Stats>().playerHealth;   
+    }
     private void Update()
     {
         if (playerHealth <= 100)
