@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerShotting : MonoBehaviour
 {
-    [SerializeField] public float Bulletspeed = 3f;
+    [SerializeField] public float Bulletspeed = 5f;
     [SerializeField] GameObject Bullet;
     void Update()
     {

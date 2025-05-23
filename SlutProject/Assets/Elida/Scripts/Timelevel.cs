@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Timelevel : MonoBehaviour
 {
+    public bool inStore = false;
     public float Levelend = 100f;
     public float startTime;
     
@@ -25,9 +26,9 @@ public class Timelevel : MonoBehaviour
 
     public void EndLevel()
     {
-        SceneManager.LoadScene("Storescene");
-        FindFirstObjectByType<Scenepersist>().ResetScenepersist();
-        int Currentsceneindex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(Currentsceneindex * 1);
+       
+        SceneManager.LoadScene("Stor");
+        inStore = true;
+     
     }
 }
