@@ -12,13 +12,6 @@ public class PlayerHealth : MonoBehaviour
         playerHealth = FindFirstObjectByType<Stats>().playerHealth;
         Debug.Log(playerHealth);
     }
-    private void Update()
-    {
-        if (playerHealth <= 100)
-        {
-            
-        }
-    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
